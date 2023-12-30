@@ -5,7 +5,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  NavLink,
 } from 'react-router-dom';
 
 function App() {
@@ -14,8 +13,8 @@ function App() {
     <BrowserRouter>
       <div>
         <Routes>
-           <Route path="/" element={<Login/>}></Route>
-           <Route path="/dashboard" element={<Dashboard/>}></Route>
+           <Route exact path="/" element={<Login/>}></Route>
+           <Route exact path="/dashboard" element={<Dashboard/>}></Route>
         </Routes>
       </div>
      </BrowserRouter>

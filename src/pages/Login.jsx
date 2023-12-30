@@ -1,7 +1,8 @@
 import login_img from "../assets/login.png";
 import logo from "../assets/logo.png";
+import {useNavigate} from 'react-router-dom'
 function Login() {
-
+ const navigate = useNavigate();
   return (
     <div className="w-full h-dvh bg-grey_custom p-2 flex justify-between items-center">
       <div className=" flex items-center justify-center w-full h-full ">
@@ -48,6 +49,7 @@ function Login() {
           <button
             type="submit"
             className="text-white bg-black px-5 py-4 mt-4 rounded-full w-full"
+            onClick={()=> navigate('/dashboard')}
           >
             Log In
           </button>

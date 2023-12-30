@@ -4,6 +4,7 @@ import EmployeeInfoCard from "../components/EmployeeInfoCard";
 import EmployeeDetails from "../components/EmployeeDetails";
 import {useSelector} from 'react-redux'
 import DependentInfoCard from "../components/DependentInfoCard";
+
 function Dashboard() {
 const userRole = useSelector(state=>state.user.role)
   return (

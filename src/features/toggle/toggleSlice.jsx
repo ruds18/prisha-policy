@@ -8,7 +8,7 @@ export const toggleSlice = createSlice({
     name:'toggle',
     initialState,
     reducers:{
-        toggleEmployeeInfo:(state,action)=>{
+        toggleEmployeeInfo:(state)=>{
             state.value= !state.value
         }
     }

@@ -8,7 +8,15 @@ const initialState = {
 export const userSlice = createSlice({
   name: 'user',
   initialState, 
-  reducers: {}
+  reducers: {
+    toggleUser:(state)=>{
+      if(state.role==='manager'){
+        state.role='employee'
+      }else{
+        state.role='manager'
+      }
+    }
+  }
 });
-
+export const {toggleUser} = userSlice.actions
 export default userSlice.reducer;

@@ -10,7 +10,7 @@ export default {
           blue_light: '#EDF5FF',
           blue_dark : '#27378C',
           red_custom: '#FFEDED',
-          grey_custom:'#E9E9E9'
+          grey_custom:'#CCCCCC'
       },
     },
   plugins: [],
